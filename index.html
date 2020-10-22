@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Michael Scott Paper Company</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>"Limitless Paper in a Paperless World"</h1>
+      <!--Michael Scott quote, maybe add img of michael-->
+
+      <form id="paper">
+        <div class="form-group">
+          <label for="name">Enter your name</label>
+          <input id="name" class="form-control" type="text" />
+        </div>
+
+        <div class="form-group">
+          <label for="address">Enter your address</label>
+          <input id="address" class="form-control" type="text" />
+        </div>
+
+        <p>Paper Size:</p>
+        <select class="form-control" id="size">
+          <option>Letter Size</option>
+          <option>Break Up Letter Size</option>
+          <option>Gettysburge Address Size</option>
+          <option>Sue your neighbor Legal Size</option>
+          <option>Bum Fodder Size</option>
+        </select>
+        <br />
+        <p>Type of Paper</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="papertype" value="cardstock" />
+            Card Stock
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="papertype" value="bond" />
+            Bond
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="papertype" value="parchment" />
+            Parchment
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="papertype" value="wallpaper" />
+            Wallpaper
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="papertype" value="toiletpaper" />
+            Toilet Paper
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label for="date">Desired Delivery Date:</label>
+          <input id="date" class="form-control" type="date" />
+        </div>
+
+        <div class="form-group">
+          <label for="color">Paper Color:</label>
+          <input id="color" class="form-control" type="color" />
+        </div>
+        <button type="submit" class="btn btn-info">Checkout</button>
+      </form>
+
+      <div id="receipt">
+        <p>
+          Thank you <span class="name"></span> for purchasing
+          <span class="papertype"></span> in <span class="size"></span> in the
+          lovely shade of <span class="color"></span>. You should expect your
+          delivery on <span class="date"></span> at
+          <span class="address"></span>.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
